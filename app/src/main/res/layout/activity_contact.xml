@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Contact Us"
+        app:titleTextColor="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="OM CELLULAR"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Your Trusted Mobile Partner"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop no. 8 upper ground floor, center square mall, Gumanpura Rd, Gumanpura, Kota, Rajasthan 324007, India"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawableEnd="@android:drawable/ic_media_play"
+                app:drawableTint="@color/colorPrimary"
+                android:drawablePadding="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/text_primary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 9461903100"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_contact"
+                android:drawableEnd="@android:drawable/ic_media_play"
+                app:drawableTint="@color/colorPrimary"
+                android:drawablePadding="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/text_primary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Hours"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mon-Sat: 10:00 AM - 8:00 PM"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday: Closed"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".DeviceEvaluationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does the device turn on?"
+                android:textSize="16sp"/>
+            <RadioGroup
+                android:id="@+id/rg_power"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/rb_power_yes" android:text="Yes"/>
+                <RadioButton android:id="@+id/rb_power_no" android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Are there any scratches on screen?"
+                android:textSize="16sp"/>
+            <RadioGroup
+                android:id="@+id/rg_scratches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/rb_scratches_yes" android:text="Yes"/>
+                <RadioButton android:id="@+id/rb_scratches_no" android:text="No"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_calculate_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Calculate Price"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

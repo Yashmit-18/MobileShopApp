@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "503553935880",
+    "project_id": "om-cellular",
+    "storage_bucket": "om-cellular.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503553935880:android:bbcceb68fc4bd7dff35fbd",
+        "android_client_info": {
+          "package_name": "com.example.omcellular5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASBXdiU78_VbNiPuON9cCw75FdfNW5GM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
